@@ -10,3 +10,4 @@ crate-type = ["cdylib"]
 sycamore = { version = "0.9" }
 wasm-bindgen = "0.2.100"
 web-sys = { version = "0.3", features = ["console"] }
+vex-data = { path = "../vex-data" }

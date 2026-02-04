@@ -1,17 +1,16 @@
 [package]
-name = "app"
+name = "vulnix-vex"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "Vulnix-Vex is a tool for remediating vulns and doing the bookkeeping"
+authors = ["David J. Shepard II"]
 license = ""
 repository = ""
-edition = "2021"
-rust-version = "1.77.2"
+edition = "2024"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-name = "app_lib"
+name = "vulnix_vex_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
@@ -21,5 +20,7 @@ tauri-build = { version = "2.1.1", features = [] }
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 log = "0.4"
-tauri = { version = "2.4.1", features = [] }
-tauri-plugin-log = "2.0.0-rc"
+tauri = { version = "2.5.1", features = [ ] }
+tauri-plugin-log = "2.4.0"
+vex-data = { path = "../vex-data" }
+wry = "0.51.2"

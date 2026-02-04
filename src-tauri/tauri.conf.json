@@ -7,7 +7,7 @@
     "frontendDist": "../dist",
     "devUrl": "http://localhost:8080",
     "beforeDevCommand": "./scripts/build-assets.sh && (cd dist && simple-http-server --port 8080 --index --try-file index.html)",
-    "beforeBuildCommand": "./scripts/build-assets.sh"
+    "beforeBuildCommand": ""
   },
   "app": {
     "windows": [
@@ -25,14 +25,15 @@
   },
   "bundle": {
     "active": true,
-    "targets": "all",
+    "targets": "appimage",
     "icon": [
-      "icons/32x32.png",
-      "icons/128x128.png",
-      "icons/128x128@2x.png",
-      "icons/icon.icns",
-      "icons/icon.ico"
-    ]
+      "assets/icons/hicolor/256x256/apps/vulnix-vex.png"
+    ],
+    "category": "Utility",
+    "shortDescription": "Vulnerability Explorer UI",
+    "longDescription": "Vulnix VEX is a graphical interface for vulnerability analysis.",
+    "resources": [],
+    "copyright": "Copyright © 2025 David Shepard",
+    "publisher": "David Shepard"
   }
 }
-

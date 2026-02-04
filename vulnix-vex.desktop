@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Vulnix VEX
+Exec=vulnix-vex
+Icon=vulnix-vex
+Type=Application
+Categories=Utility;
+Terminal=false

@@ -3,4 +3,5 @@ resolver = "3"
 members = [
     "frontend",
     "src-tauri",
+    "vex-data"
 ]
